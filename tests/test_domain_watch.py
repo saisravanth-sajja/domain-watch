@@ -130,6 +130,7 @@ def test_load_config(tmp_path):
 
 def test_record_text():
     assert dw.record_text("MX", rd("MX", "10 Mail.Example.com.")) == "10 mail.example.com"
+    assert dw.record_text("MX", rd("MX", "0 .")) == "0 ."  # null MX
     assert dw.record_text("TXT", rd("TXT", '"v=spf1 " "-all"')) == "v=spf1 -all"
     assert dw.record_text("CAA", rd("CAA", '0 issue "letsencrypt.org"')) == '0 issue "letsencrypt.org"'
     assert dw.record_text("CNAME", rd("CNAME", "Edge.Example.net.")) == "edge.example.net"
