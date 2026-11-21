@@ -1,0 +1,60 @@
+{
+  "ct_baselined": true,
+  "ct_cursor": "17893609773",
+  "dns": {
+    "example.com": {
+      "A": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "AAAA": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ],
+      "CAA": [],
+      "MX": [
+        "0 "
+      ],
+      "NS": [
+        "elliott.ns.cloudflare.com",
+        "hera.ns.cloudflare.com"
+      ],
+      "TXT": [
+        "_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9",
+        "v=spf1 -all"
+      ]
+    },
+    "www.example.com": {
+      "A": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "AAAA": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ]
+    }
+  },
+  "problems": {},
+  "registration": "2027-08-13",
+  "tls": {
+    "example.com": {
+      "expires": "2026-12-25",
+      "fingerprint": "85ca6ab068e9bcce",
+      "issuer": "SSL Corporation",
+      "key": "ECDSA P-256",
+      "signature": "sha256",
+      "tls_version": "TLSv1.3",
+      "weak_key": false
+    },
+    "www.example.com": {
+      "expires": "2026-12-25",
+      "fingerprint": "85ca6ab068e9bcce",
+      "issuer": "SSL Corporation",
+      "key": "ECDSA P-256",
+      "signature": "sha256",
+      "tls_version": "TLSv1.3",
+      "weak_key": false
+    }
+  }
+}
