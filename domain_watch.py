@@ -77,13 +77,19 @@ def make_resolver():
     return resolver
 
 
+def target_name(name):
+    # Keep the root as "." so a null MX ("0 .", the domain takes no mail)
+    # doesn't come out as "0 ".
+    return clean_name(name.to_text()) or "."
+
+
 def record_text(rtype, r):
     if rtype in ("A", "AAAA"):
         return r.address
     if rtype in ("CNAME", "NS"):
-        return clean_name(r.target.to_text())
+        return target_name(r.target)
     if rtype == "MX":
-        return f"{r.preference} {clean_name(r.exchange.to_text())}"
+        return f"{r.preference} {target_name(r.exchange)}"
     if rtype == "TXT":
         return b"".join(r.strings).decode("utf-8", "replace")
     if rtype == "CAA":
