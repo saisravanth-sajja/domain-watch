@@ -1,0 +1,21 @@
+# Domains to watch. This copy watches example.com as a demo; replace it
+# with your own.
+domains:
+  - name: example.com
+    # Names to check TLS on. Each one other than the domain itself also
+    # gets its DNS tracked (the CNAME target, or its A/AAAA records).
+    hosts: [example.com, www.example.com]
+
+  # Short form, only checks TLS on the domain itself:
+  # - example.org
+
+  # Record types you don't want alerts for, e.g. TXT records that a
+  # provider rewrites on its own:
+  # - name: example.net
+  #   ignore: [TXT]
+
+# Alert when a certificate expires within this many days.
+cert_warn_days: 21
+
+# Alert when the domain registration expires within this many days.
+domain_warn_days: 30
