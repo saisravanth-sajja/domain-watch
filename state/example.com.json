@@ -1,6 +1,6 @@
 {
   "ct_baselined": true,
-  "ct_cursor": "17893609773",
+  "ct_cursor": "18605860762",
   "dns": {
     "example.com": {
       "A": [
@@ -39,8 +39,8 @@
   "registration": "2027-08-13",
   "tls": {
     "example.com": {
-      "expires": "2026-12-25",
-      "fingerprint": "85ca6ab068e9bcce",
+      "expires": "2027-02-22",
+      "fingerprint": "56986996436e5efd",
       "issuer": "SSL Corporation",
       "key": "ECDSA P-256",
       "signature": "sha256",
@@ -48,8 +48,8 @@
       "weak_key": false
     },
     "www.example.com": {
-      "expires": "2026-12-25",
-      "fingerprint": "85ca6ab068e9bcce",
+      "expires": "2027-02-22",
+      "fingerprint": "56986996436e5efd",
       "issuer": "SSL Corporation",
       "key": "ECDSA P-256",
       "signature": "sha256",

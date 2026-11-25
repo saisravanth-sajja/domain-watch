@@ -4,8 +4,8 @@ _Last refreshed: 2026-11. The workflow runs daily; this file only changes when s
 
 | Host | Certificate expires | Issuer | Key | TLS |
 | --- | --- | --- | --- | --- |
-| example.com | 2026-12-25 | SSL Corporation | ECDSA P-256 | TLSv1.3 |
-| www.example.com | 2026-12-25 | SSL Corporation | ECDSA P-256 | TLSv1.3 |
+| example.com | 2027-02-22 | SSL Corporation | ECDSA P-256 | TLSv1.3 |
+| www.example.com | 2027-02-22 | SSL Corporation | ECDSA P-256 | TLSv1.3 |
 
 | Domain | Registration expires | Open problems |
 | --- | --- | --- |
